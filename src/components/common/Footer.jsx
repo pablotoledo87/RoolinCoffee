@@ -1,8 +1,8 @@
 const Footer = () => {
     return (
-        <div>
-            <p>Aqui va el footer</p>
-        </div>
+        <footer className="text-center bg-green text-light py-3">
+            <p>&copy; Todos los derechos reservados</p>
+        </footer>
     );
 };
 
