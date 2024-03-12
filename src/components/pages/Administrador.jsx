@@ -2,6 +2,7 @@ import { Button, Table } from "react-bootstrap";
 import {Link} from "react-router-dom"
 import { useEffect, useState } from "react";
 import { leerProductoAPI } from "../../helpers/queries";
+import ItemProducto from "./producto/ItemProducto";
 
 
 const Administrador = () => {
@@ -13,7 +14,8 @@ const Administrador = () => {
 
     const traerProductos = async() =>{
         try {
-         await leerProductoAPI
+        const listaProductosAPI = await leerProductoAPI()
+        setProductos(listaProductosAPI);
         } catch (error) {
             
         }
@@ -42,7 +44,9 @@ const Administrador = () => {
         </tr>
       </thead>
       <tbody>
-        <h2>hola mundo</h2>
+        {
+            productos.map((producto)=><ItemProducto key={producto.id} producto={producto}></ItemProducto>)
+        }
       </tbody>
       </Table>
       </section>
