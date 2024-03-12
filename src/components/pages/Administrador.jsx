@@ -1,4 +1,7 @@
 import { Button, Table } from "react-bootstrap";
+import {Link} from "react-router-dom"
+
+
 const Administrador = () => {
     return (
       <section className="container mainSection">
