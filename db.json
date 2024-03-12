@@ -1,0 +1,20 @@
+{
+    "productos":[
+        {
+            "nombreProducto": "cafe",
+            "precio": 1000,
+            "categoria": "infusiones",
+            "descripcion-breve": "cafe rico",
+            "descripcion amplia": "cafe rico y bonito",
+            "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "disponibilidad": true,
+            "id": "1"
+        }
+    ],
+    "usuarios":[
+        {
+            "email": "prueba@mail.com",
+            "password": "123"
+        }
+    ]
+}
